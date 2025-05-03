@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ReactNative_sample1",
-    "slug": "ReactNative_sample1",
+    "slug": "reactnativesample1",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -37,6 +37,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "293c302d-4fc8-4229-8273-f52c6e0b5b43"
+      }
+    },
+    "owner": "najongjine"
   }
 }
