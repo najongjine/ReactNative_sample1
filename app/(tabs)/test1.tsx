@@ -1,9 +1,11 @@
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
+import { useRouter } from "expo-router";
 import React from "react";
-import { Platform, ScrollView, StyleSheet } from "react-native";
+import { Button, Platform, ScrollView, StyleSheet } from "react-native";
 
 export default function Test1Screen() {
+  const router = useRouter();
   return (
     <ScrollView style={{ marginTop: 20, padding: 4 }}>
       <ThemedView style={styles.titleContainer}>
@@ -28,6 +30,10 @@ export default function Test1Screen() {
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 2: Explore</ThemedText>
         <ThemedText>{`Tap the Explore tab to learn more about what's included in this starter app.`}</ThemedText>
+      </ThemedView>
+
+      <ThemedView style={styles.stepContainer}>
+        <Button title="모달 열기" onPress={() => router.push("/modals/modal1")} />
       </ThemedView>
     </ScrollView>
   );
